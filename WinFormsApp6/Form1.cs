@@ -61,7 +61,7 @@ namespace WinFormsApp6
             {
                 if (splitRegions)
                 {
-                    int regionSize = 100; // Розмір області, який використовується для розбиття
+                    int regionSize = 100;
                     int regionsX = (pictureBox1.Width + regionSize - 1) / regionSize;
                     int regionsY = (pictureBox1.Height + regionSize - 1) / regionSize;
 
@@ -157,7 +157,7 @@ namespace WinFormsApp6
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
             points.Clear();
-            int numPoints = 100; // кількість точок для генерації
+            int numPoints = 100;
             for (int i = 0; i < numPoints; i++)
             {
                 points.Add(new Point(random.Next(pictureBox1.Width), random.Next(pictureBox1.Height)));
